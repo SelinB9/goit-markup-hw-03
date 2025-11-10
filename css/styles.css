@@ -1,152 +1,154 @@
-/* ===== NORMALIZATION ===== */
+/* -------------------- */
+/* Modern Normalize + Temel Ayarlar */
+/* -------------------- */
 img {
     display: block;
+    max-width: 100%;
 }
 
-/* ===== CONTAINER ===== */
 .container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* ===== HEADER ===== */
-.header-box {
+/* -------------------- */
+/* Header */
+/* -------------------- */
+.main-header {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-box .flex-container {
+.header-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* NAVIGATION */
-.nav-bar {
+.main-nav {
     display: flex;
     align-items: center;
 }
 
-.nav-bar .logo-link {
+.logo-link {
     margin-right: 76px;
 }
 
-.nav-bar .nav-list {
+.nav-list {
     display: flex;
     gap: 40px;
 }
 
-.nav-bar .contact-list {
-    display: flex;
-    gap: 40px;
+.nav-item {
+    padding: 24px 0;
 }
 
-/* ===== HERO SECTION ===== */
-.hero-section {
-    padding: 188px 0;
-}
-
-.hero-section .hero-container h1 {
-    max-width: 496px;
-}
-
-.hero-section .hero-button {
-    display: block;
-    margin: 0 auto;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    background-color: #4d5ae5;
-    cursor: pointer;
-}
-
-/* ===== WHITE SECTION ===== */
-.white-section {
+/* -------------------- */
+/* Second Section - Services */
+/* -------------------- */
+.services-section {
     padding: 120px 0;
 }
 
-.white-section .container ul {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.services-list {
     display: flex;
     gap: 24px;
 }
 
-.white-section li {
-    width: calc((100% - 72px) / 4);
+.service-item {
+    width: calc((100% - 72px)/4);
 }
 
-/* ===== TEAM SECTION ===== */
+.service-title {
+    margin-bottom: 8px;
+}
+
+/* -------------------- */
+/* Third Section - Team */
+/* -------------------- */
 .team-section {
     padding: 120px 0;
 }
 
-.team-section h2 {
+.team-title {
     margin-bottom: 72px;
 }
 
-.team-section ul {
+.team-list {
     display: flex;
     gap: 24px;
 }
 
-.team-section li {
-    width: calc((100% - 72px) / 4);
+.team-member {
+    width: calc((100% - 72px)/4);
+    border-radius: 0 0 4px 4px;
 }
 
-.team-section li .member-info {
+.member-card {
     padding: 32px 0;
 }
 
-.team-section li h3 {
+.member-name {
     text-align: center;
     margin-bottom: 8px;
 }
 
-.team-section li p {
+.member-role {
     text-align: center;
 }
 
-/* ===== PORTFOLIO SECTION ===== */
+/* -------------------- */
+/* Fourth Section - Portfolio */
+/* -------------------- */
 .portfolio-section {
     padding: 120px 0;
 }
 
-.portfolio-section h2 {
+.portfolio-title {
     margin-bottom: 72px;
 }
 
-.portfolio-section ul {
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
 
-.portfolio-section li {
-    width: calc((100% - 72px) / 4);
+.portfolio-item {
+    width: calc((100% - 72px)/4);
 }
 
-.portfolio-section li .portfolio-info {
+.portfolio-card {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
 }
 
-/* ===== FOOTER ===== */
-.footer-box {
+/* -------------------- */
+/* Footer */
+/* -------------------- */
+.main-footer {
     padding: 100px 0;
 }
 
-.footer-box .container a {
+.main-footer a {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.footer-box .container p {
+.footer-text {
     max-width: 264px;
-}
-
-/* ===== ADDITIONAL STYLING ===== */
-button,
-a {
-    cursor: pointer;
 }
