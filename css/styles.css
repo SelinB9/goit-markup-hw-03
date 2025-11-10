@@ -1,289 +1,152 @@
-/* ===== VARIABLES ===== */
-:root {
-    --h2-color: #2e2f42;
-    --iris-color: #4d5ae5;
-    --p-color: #434455;
-}
-
-/* ===== RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--p-color);
-    background-color: #fff;
-    font-weight: 400;
+/* ===== NORMALIZATION ===== */
+img {
+    display: block;
 }
 
 /* ===== CONTAINER ===== */
 .container {
-    max-width: 1440px;
+    width: 1158px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* ===== HEADER ===== */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
+.header-box {
     border-bottom: 1px solid #e7e9fc;
-    font-family: 'Raleway', sans-serif;
 }
 
-.logo1 a {
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--iris-color);
-    font-weight: 700;
+.header-box .flex-container {
+    display: flex;
 }
 
-.color-logo {
-    color: #2e2f42;
-}
-
-.nav {
+/* NAVIGATION */
+.nav-bar {
     display: flex;
     align-items: center;
-    gap: 60px;
 }
 
-.nav-list {
-    list-style: none;
+.nav-bar .logo-link {
+    margin-right: 76px;
+}
+
+.nav-bar .nav-list {
     display: flex;
     gap: 40px;
 }
 
-.nav-list a {
-    text-decoration: none;
-    color: #2e2f42;
-    font-size: 16px;
-}
-
-.nav-list a:hover {
-    color: #3c49c0;
-}
-
-.contact-info address {
+.nav-bar .contact-list {
     display: flex;
     gap: 40px;
-    font-style: normal;
-    font-size: 16px;
-}
-
-.contact-info p:hover {
-    color: #3c49c0;
-    cursor: pointer;
 }
 
 /* ===== HERO SECTION ===== */
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--h2-color);
-    gap: 48px;
-    text-align: center;
-    padding-top: 168px;
-    padding-bottom: 186px;
+.hero-section {
+    padding: 188px 0;
 }
 
-.hero-title {
-    font-size: 56px;
-    font-weight: 700;
-    color: #fff;
+.hero-section .hero-container h1 {
+    max-width: 496px;
 }
 
-.hero-button {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 16px 32px;
-    border-radius: 4px;
-    background-color: var(--iris-color);
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+.hero-section .hero-button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
     border: none;
-    transition: background 0.3s ease;
-}
-
-.hero-button:hover {
-    background-color: #404bbf;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    cursor: pointer;
 }
 
 /* ===== WHITE SECTION ===== */
-.white-text {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+.white-section {
     padding: 120px 0;
-    list-style: none;
 }
 
-.feature-item {
-    width: 264px;
+.white-section .container ul {
+    display: flex;
+    gap: 24px;
 }
 
-.feature-box {
-    text-align: center;
-}
-
-.feature-title {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.feature-text {
-    font-size: 16px;
-    color: var(--p-color);
+.white-section li {
+    width: calc((100% - 72px) / 4);
 }
 
 /* ===== TEAM SECTION ===== */
 .team-section {
-    background: #f4f4fd;
-    padding-bottom: 240px;
-    text-align: center;
+    padding: 120px 0;
 }
 
-.ourteam {
-    font-size: 36px;
-    font-weight: 700;
-    padding-top: 120px;
-    color: var(--h2-color);
+.team-section h2 {
     margin-bottom: 72px;
 }
 
-.team-list {
+.team-section ul {
     display: flex;
-    justify-content: center;
     gap: 24px;
-    list-style: none;
-    flex-wrap: wrap;
-    padding-bottom: 120px;
 }
 
-.team-item {
-    width: 264px;
+.team-section li {
+    width: calc((100% - 72px) / 4);
+}
+
+.team-section li .member-info {
+    padding: 32px 0;
+}
+
+.team-section li h3 {
     text-align: center;
+    margin-bottom: 8px;
 }
 
-.team-member img {
-    width: 264px;
-    height: 260px;
-    object-fit: cover;
-}
-
-.team-text {
-    background: #fff;
-    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
-    padding: 32px 16px;
-    margin-top: -8px;
-}
-
-.team-name {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.team-role {
-    font-size: 14px;
-    color: var(--p-color);
+.team-section li p {
+    text-align: center;
 }
 
 /* ===== PORTFOLIO SECTION ===== */
 .portfolio-section {
-    text-align: center;
     padding: 120px 0;
 }
 
-.ourportfolio {
-    font-size: 36px;
-    font-weight: 700;
+.portfolio-section h2 {
     margin-bottom: 72px;
-    color: var(--h2-color);
 }
 
-.portfolio-list {
+.portfolio-section ul {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    list-style: none;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
-.portfolio-item {
-    width: 360px;
+.portfolio-section li {
+    width: calc((100% - 72px) / 4);
 }
 
-.portfolio-card {
-    background: #fff;
-    border-radius: 0 0 4px 4px;
-    text-align: left;
-}
-
-.portfolio-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.portfolio-card h3 {
-    font-size: 18px;
+.portfolio-section li .portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
     margin-bottom: 8px;
 }
 
-.portfolio-card p {
-    font-size: 14px;
-    color: var(--p-color);
-    padding-bottom: 16px;
-    padding-left: 16px;
-}
-
 /* ===== FOOTER ===== */
-footer {
-    background: var(--h2-color);
-    font-family: 'Raleway', sans-serif;
-}
-
-.last-logo {
+.footer-box {
     padding: 100px 0;
-    padding-left: 156px;
-    color: #f4f4fd;
 }
 
-.last-a a {
-    color: var(--iris-color);
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
+.footer-box .container a {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
-.last-p {
-    font-size: 16px;
-    margin-top: 16px;
-    width: 264px;
-    color: #f4f4fd;
+.footer-box .container p {
+    max-width: 264px;
 }
 
-/* ===== GENERAL ===== */
+/* ===== ADDITIONAL STYLING ===== */
+button,
 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
     cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.3s;
 }
